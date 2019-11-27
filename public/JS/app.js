@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit',(e)=>{
     msgtwo.textContent=""
 
     
-fetch('http://localhost:3000/weather?search='+encodeURIComponent(location)).then((response)=>{
+fetch('/weather?search='+encodeURIComponent(location)).then((response)=>{
 
     response.json().then((data)=>{
 
