@@ -13,7 +13,7 @@ const publicDir= path.join(__dirname,'../public')
 const viewsDir= path.join(__dirname,'../templates/views')
 const partialsDir= path.join(__dirname,'../templates/partials')
 
-app.use(express.static(publicDir))
+app.use('/',express.static(publicDir))
 app.set('views',viewsDir)
 hbs.registerPartials(partialsDir)
 
